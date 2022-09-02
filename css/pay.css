@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*css for header*/
+.header {
+    background-color: rgb(72, 72, 214);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    padding: 15px 3vw;
+    position: fixed;
+    z-index: 999;
+}
+
+.title {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+.page-nav {
+    display: inline-flex;
+    list-style: none;
+}
+.page-nav li {
+    margin: 0 20px;
+}
+.page-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.page-nav a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.page-nav a:hover::after{
+    width: 100%;
+}
+
+/*css for sticky nav-bar*/
+.menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .btn{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+header.sticky{
+    background: rgb(72, 72, 214);
+}
+/*css for sticky nav-bar ends here*/
+
+/*css for container*/
+.container {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #2ecc71 60%, #27ae60  40.1%);
+    padding-bottom: 70px;
+}
+
+.container form{
+    padding: 20px;
+    width: 700px;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container form .form-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container form .form-row .form-col-1{
+    flex: 1 1 250px;
+}
+
+.container form .form-row .form-col-1 .bill-title{
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.container form .form-row .form-col-1 .input-box{
+    margin: 15px 0;
+}
+
+.container form .form-row .form-col-1 .input-box span{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.container form .form-row .form-col-1 .input-box input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.container form .form-row .form-col-1 .input-box input:focus{
+    border: 1px solid #000;
+}
+
+.container form .form-row .form-col-1 .flex{
+    display: flex;
+    gap: 15px;
+}
+
+.container form .form-row .form-col-1 .flex .input-box{
+    margin-top: ;
+}
